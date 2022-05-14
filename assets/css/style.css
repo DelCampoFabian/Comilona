@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.resumen-icon-primario {
+  color: #1CC760;
+}
+
+.resumen-icon-secundario {
+  color: #6B0529;
+}
+
+.resumen-icon-cuarto {
+  color: #EBB010;
+}
+
+.resumen-icon-quinto {
+  color: #002CEB;
+}
+
+.home {
+  padding: 15px;
+  margin: 15px auto;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 32px;
+}
+
+.home h3 {
+  color: #1CC760;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.home p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.home img {
+  border-radius: 6px;
+}
+
+.resumen {
+  width: 95%;
+  padding: 15px;
+  margin: auto;
+  border: none;
+  border-radius: 0;
+}
+
+.resumen .resumen-links {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: #234;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  margin: 10px auto;
+  border: 4px solid #000;
+  border-radius: 4px;
+}
+
+.resumen .resumen-links i {
+  font-size: 90px;
+}
+
+.resumen .resumen-links h4 {
+  width: 60%;
+}
+
+.resumen .resumen-links h4:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.resumen .resumen-links h4 a {
+  width: 100%;
+  padding: 6px 30px;
+  margin: auto;
+  border: 3px solid #1CC760;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.resumen .resumen-links h4 a:hover {
+  background-color: #1CC760;
+  color: #234;
+}
+
+.resumen-icon-cuarto:hover {
+  -webkit-transform: rotatey(360deg);
+          transform: rotatey(360deg);
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.resumen-icon-secundario:hover {
+  -webkit-transform: rotatez(-30deg);
+          transform: rotatez(-30deg);
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.resumen-icon-primario:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.resumen-icon-quinto:hover {
+  -webkit-transform: rotatez(40deg);
+          transform: rotatez(40deg);
+}
+/*# sourceMappingURL=style.css.map */

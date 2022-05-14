@@ -1,0 +1,6 @@
+@each $clave, $var in $colores {
+    .resumen-icon-#{$clave}{
+        color: $var;
+    }
+    
+}
