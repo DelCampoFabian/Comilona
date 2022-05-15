@@ -21,14 +21,14 @@
 }
 
 .resumen {
-    @include boxmodel (15px, auto, none, 0);
+    @include boxmodel (5px, auto, none, 0);
     .resumen-links{
         height: 200px;
         text-align: center;
         background-color: #234;
         display: flex;
         @include flexbox (space-around, center, column);
-        @include boxmodel (0px, 5px, 4px solid #000, 4px);
+        @include boxmodel (0px, 5px auto, 4px solid #000, 4px);
         i {
             font-size: 90px;
         }
@@ -38,7 +38,6 @@
                 transform: scale(0.98);
             }
             a { 
-                
                 @include boxmodel (6px 30px, auto, 3px solid $color-primario, 25px);
                 text-decoration: none;
                 color: $color-blanco;
@@ -103,7 +102,7 @@
 .pie {
     background-color: #234;
     .pie-direccion, .pie-pago {
-        @include boxmodel (15px, auto , none, none);
+        @include boxmodel (15px 30px, auto , none, none);
         display:flex;
         @include flexbox (space-around,left,column);
         h4 {
@@ -120,5 +119,62 @@
         background-color: #bbb;
         text-align: center;
 
+    }
+}
+
+
+@media (min-width:768px) {
+    .home{
+        width: 95%;
+        @include boxmodel (0, 50px auto,1px solid #000, 5px);
+        height: 400px;
+        display: flex;
+        @include flexbox (space-around, center, row);
+        .home-img {
+            width: 50%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0;
+            }
+        }
+        .home-text {
+            width: 50%;
+            padding: 10px;
+            overflow: hidden;
+        }
+    }
+    .resumen{
+        .resumen-links{
+            border: none;
+            border-radius: 0;
+        }
+    }
+}
+
+
+@media (min-width:1024px){
+    .home {
+        h1 {
+            font-size: $titulos-desktop;
+        }
+        h2 {
+            font-size: $subtitulos-desktop;   
+        }
+        p {
+            font-size: $parrafo-desktop;   
+        }
+    }
+    .pie {
+        .pie-direccion, .pie-pago {
+            h4 {
+                font-size: $subtitulos-desktop;  
+            }
+            span {
+                font-size: $parrafo-desktop;
+            }
+        }
     }
 }
